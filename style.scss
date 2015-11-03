@@ -1,0 +1,60 @@
+#wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+#top {
+  margin: 5px;
+  border: 2px solid black;
+  background: rgb(89, 97, 99);
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  height: 5em;
+}
+
+#content {
+  margin: 5px;
+  border: 2px solid black;
+  background: rgb(3, 42, 74);
+  text-align: center;
+  color: white;
+  width: 50%;
+  height: 20em;
+  display: inline-block;
+}
+
+#leftnav {
+  float: left;
+  margin: 5px;
+  border: 2px solid black;
+  background: rgb(21, 108, 82);
+  text-align: center;
+  color: black;
+  width: 20%;
+  height: 20em;
+}
+
+#more {
+  margin: 5px;
+  border: 2px solid black;
+  background: rgb(56, 60, 7);
+  text-align: center;
+  color: white;
+  width: 25%;
+  height: 20em;
+  display: inline-block;
+  float: right;
+
+}
+
+#end {
+  clear: both;
+  margin: 5px;
+  border: 2px solid black;
+  background: rgb(108, 95, 207);
+  color: white;
+  text-align: center;
+  height: 5em;
+}
