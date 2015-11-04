@@ -1,3 +1,5 @@
+$coolFont:'Ubuntu', sans-serif;
+$redColor: rgb(88, 4, 5);
 
 body {
   background-image: url("http://i.imgur.com/B3nAM6x.jpg?1");
@@ -17,15 +19,17 @@ body {
 
 #electro {
   float: left;
-  color: rgb(88, 4, 5);
+  color: $redColor;
   margin-top: 4em;
   margin-left: 4em;
+  font-family: $coolFont;
 }
 #spacerock {
   float: right;
-  color: rgb(88, 4, 5);
+  color: $redColor;
   margin-top: 4em;
   margin-right: 4em;
+  font-family: $coolFont;
 }
 #wrapper {
   width: 90%;
@@ -57,16 +61,16 @@ ul {
   font-size: 25px;
   padding: 5px;
   background-color: rgba(0, 0, 8, 0.9);
+  font-family: $coolFont;
 }
 
-#leftnav li:hover {
-  color: rgb(180, 4, 4);
-  font-size: 30px;
+#leftnav a:hover {
+  color: white;
 }
 
 a {
   text-decoration: none;
-  color: rgb(88, 4, 5);
+  color: $redColor;
 }
 
 #more {
@@ -90,7 +94,29 @@ float: right;
   height: 8em;
 }
 
+#blackbars {
+  text-align: center;
+}
 
+canvas {
+  background: black;
+  margin-right: 15px;
+  border-radius: 50px;
+}
+
+#button {
+  background: black;
+  color: white;
+  border-radius: 50px;
+  outline: none;
+}
+#end p {
+  font-family: $coolFont;
+}
+
+#end a:hover {
+  color: white;
+}
 #end {
   clear: both;
   margin: 5px;

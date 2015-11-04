@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Cos Practice Site</title>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -30,11 +31,63 @@
       </section>
       <br>
       <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <section id="blackbars">
+        <canvas id="canvas" width="525" height="300" style='border: 12px solid black'></canvas>
+        <button id="button" type="button" name="button">Cos Man</button>
+          <script type="text/javascript">
+
+            var canvas = document.getElementById('canvas');
+            var context = canvas.getContext('2d');
+
+            function randomRect() {
+            context.fillStyle = randomColor();
+            context.fillRect(200, 100, 100, 100);
+          }
+
+            function reset(){
+              canvas;
+            }
+            function randomColor() {
+              var r = Math.floor(Math.random() * 255) +1;
+              var g = Math.floor(Math.random() * 255) + 1;
+              var b = Math.floor(Math.random() * 255) + 1;
+              var a = Math.random();
+              return 'rgba(' + r + ','+ g + ',' + b + ',' + a + ')';
+            }
+
+            function randomPointX() {
+              var x = Math.random() * 500;
+              return x;
+            }
+
+            function randomPointY() {
+              var y = Math.random() * 300;
+              return y;
+            }
+            function funBars(){
+              randomRect();
+            for (i=0;i<30;i++){
+            context.beginPath();
+            context.moveTo(randomPointX(), randomPointY());
+            context.lineWidth = 12;
+            context.lineTo(randomPointX(), randomPointY());
+            context.strokeStyle = randomColor();
+            context.stroke();
+          }
+        }
+          //setInterval(function() {
+            //funBars()
+          //}, 1000);
+          var b = document.getElementById("button");
+          b.onclick = funBars
+
+          /*can't get second button to clear
+          var btn = document.getElementById('btn');
+          btn.onclick = reset*/
+
+          </script>
+
+      </section>
       <br>
       <br>
       <footer id="end">
