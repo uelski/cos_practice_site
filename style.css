@@ -7,20 +7,21 @@ body {
   margin: auto; }
 
 #top {
+  margin-top: 20px;
   text-align: center;
-  background-color: #0a0a1b; }
+  background-color: rgba(0, 0, 8, 0.9); }
 
 #electro {
   float: left;
   color: #580405;
   margin-top: 4em;
-  margin-left: 2em; }
+  margin-left: 4em; }
 
 #spacerock {
   float: right;
   color: #580405;
   margin-top: 4em;
-  margin-right: 2em; }
+  margin-right: 4em; }
 
 #wrapper {
   width: 90%;
@@ -35,12 +36,27 @@ body {
 #leftnav {
   float: left;
   margin: 5px;
-  border: 2px solid black;
-  background: #156c52;
   text-align: center;
-  color: black;
   width: 20%;
   height: 20em; }
+
+ul {
+  list-style-type: none;
+  float: left; }
+
+#leftnav li {
+  margin: 10px;
+  font-size: 25px;
+  padding: 5px;
+  background-color: rgba(0, 0, 8, 0.9); }
+
+#leftnav li:hover {
+  color: #b40404;
+  font-size: 30px; }
+
+a {
+  text-decoration: none;
+  color: #580405; }
 
 #more {
   margin: 5px;
@@ -64,10 +80,10 @@ body {
 #end {
   clear: both;
   margin: 5px;
-  border: 2px solid black;
-  background: #6c5fcf;
+  background: linear-gradient(-154.8407deg, rgba(6, 8, 25, 0.9) 6.3622%, rgba(4, 4, 20, 0.44) 46.33%, rgba(7, 7, 8, 0.9) 88.744%);
   color: white;
   text-align: center;
-  height: 5em; }
+  height: 5em;
+  margin-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */
