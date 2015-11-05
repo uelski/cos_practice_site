@@ -1,132 +1,114 @@
-$coolFont:'Ubuntu', sans-serif;
-$redColor: rgb(88, 4, 5);
-
 body {
-  background-image: url("http://i.imgur.com/B3nAM6x.jpg?1");
-}
+  background-image: url("http://i.imgur.com/B3nAM6x.jpg?1"); }
 
 #sticker {
   width: 30%;
   height: 15em;
-  margin: auto;
-}
+  margin: auto; }
 
 #top {
   margin-top: 20px;
   text-align: center;
-  background-color: rgba(0, 0, 8, 0.9);
-}
+  background-color: rgba(0, 0, 8, 0.9); }
 
 #electro {
   float: left;
-  color: $redColor;
+  color: #580405;
   margin-top: 4em;
   margin-left: 4em;
-  font-family: $coolFont;
-}
+  font-family: "Ubuntu", sans-serif; }
+
 #spacerock {
   float: right;
-  color: $redColor;
+  color: #580405;
   margin-top: 4em;
   margin-right: 4em;
-  font-family: $coolFont;
-}
+  font-family: "Ubuntu", sans-serif; }
+
 #wrapper {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-}
-
+  position: relative; }
 
 #content {
   margin: 5px;
-  display: inline-block;
-}
+  display: inline-block; }
 
 #leftnav {
   float: left;
   margin: 5px;
   text-align: center;
   width: 20%;
-  height: 20em;
-}
+  height: 20em; }
 
 ul {
   list-style-type: none;
-  float: left;
-}
+  float: left; }
+
 #leftnav li {
   margin: 10px;
   font-size: 25px;
   padding: 5px;
   background-color: rgba(0, 0, 8, 0.9);
-  font-family: $coolFont;
-}
+  font-family: "Ubuntu", sans-serif; }
 
 #leftnav a:hover {
-  color: white;
-}
+  color: white; }
 
 a {
   text-decoration: none;
-  color: $redColor;
-}
+  color: #580405; }
 
 #more {
-margin: 5px;
-width: 24%;
-height: 20em;
-display: inline-block;
-float: right;
-}
+  margin: 5px;
+  width: 24%;
+  height: 20em;
+  display: inline-block;
+  float: right; }
 
 #bestbeef {
   margin-top: 10px;
   margin-right: 10px;
   width: 95%;
-  height: 8em;
-}
+  height: 8em; }
+
 #flydoitch {
   margin-top: 10px;
   margin-right: 10px;
   width: 95%;
-  height: 8em;
-}
+  height: 8em; }
 
 #blackbars {
-  text-align: center;
-}
+  text-align: center; }
 
 canvas {
   background: black;
   margin-right: 15px;
-  border-radius: 50px;
-}
+  border-radius: 50px; }
 
 #button {
   background: black;
   color: white;
   border-radius: 50px;
-  outline: none;
-}
+  outline: none; }
+
+#brand {
+  text-align: center; }
+
 #end p {
-  font-family: $coolFont;
-}
+  font-family: "Ubuntu", sans-serif; }
 
 #end a:hover {
-  color: white;
-}
+  color: white; }
+
 #end {
   clear: both;
   margin: 5px;
-  background: linear-gradient(
-	-154.840698083968deg,
-	rgba(6,8,25,.9) 6.3622%,
-	rgba(4,4,20,0.44) 46.330%,
-	rgba(7,7,8,.9) 88.744%);
+  background: linear-gradient(-154.8407deg, rgba(6, 8, 25, 0.9) 6.3622%, rgba(4, 4, 20, 0.44) 46.33%, rgba(7, 7, 8, 0.9) 88.744%);
   color: white;
   text-align: center;
   height: 5em;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=style.css.map */
