@@ -14,10 +14,18 @@ body.addEventListener('click', function() {
   return brandCounter = 1;
 }
 });
+hello();
+var message = "More to come."
+var navlist = document.getElementsByClassName('nav');
 var list = document.getElementsByClassName("nav")[0];
 console.log(list);
+var listCounter = 0
 list.addEventListener('click', function() {
-  return alert("You clicked!");
+  if (listCounter < 3){
+  clickmsg.initialize(list);
+  clickmsg.render(message);
+  return listCounter += 1;
+}
 });
 
 
@@ -31,15 +39,18 @@ list.addEventListener('click', function() {
 } // end of window.onload
 
 
-
+var hello = function(){
+  console.log("im still here");
+}
 
 function component(domElement) {
   this.domElement = domElement;
-  this.initialize = function() {
+  this.initialize = function(selector) {
     this.domElement = document.createElement('div');
+    selector.appendChild(this.domElement);
   };
-  this.render = function() {
-    this.domElement.innerHTML = "More to Come";
+  this.render = function(message) {
+    this.domElement.innerHTML = message;
   }
 }
 var navlist = document.getElementsByClassName('nav');
